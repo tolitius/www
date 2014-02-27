@@ -5,7 +5,7 @@
   :source-paths ["src" "src/{{name}}"]
 
   :dependencies [[compojure "1.1.6"]
-                 [org.clojure/clojurescript "0.0-2173"]
+                 [org.clojure/clojurescript "0.0-2030"]
                  [org.clojure/clojure "1.5.1"]
                  [hiccup "1.0.5"]]
 
