@@ -1,0 +1,16 @@
+/target
+/lib
+/out
+/classes
+/checkouts
+resources/public/js/{{name}}*
+pom.xml
+*.jar
+*.class
+*.swp
+.lein-deps-sum
+.lein-failures
+.lein-plugins
+.lein-env
+.lein-repl-history
+.nrepl-port
