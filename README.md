@@ -8,21 +8,21 @@ The reason it is not CCC<b>R</b>, is simply because [CCCP](http://en.wikipedia.o
 
 Creates a project template in a form of:
 
-```clojure
+```bash
 .
 ├── project.clj
 ├── resources
 │   └── public
 │       └── css
-│           └── [app name].css   ;; entry point for CSS
+│           └── [app name].css   # entry point for CSS
 └── src
     └── [app name]
         ├── cljs
-        │   ├── [app name].cljs  ;; entry point for ClojureScript
-        │   └── tools.cljs       ;; console logging & local storage
-        ├── handler.clj          ;; entry point for Compojure routes
-        ├── [app name].clj       ;; entry point for server logic
-        └── layout.clj           ;; sample layout (used as an example is "handler.clj")
+        │   ├── [app name].cljs  # entry point for ClojureScript
+        │   └── tools.cljs       # console logging & local storage
+        ├── handler.clj          # entry point for Compojure routes
+        ├── [app name].clj       # entry point for server logic
+        └── layout.clj           # sample layout (used as an example is "handler.clj")
 ```
 
 ### start the app
