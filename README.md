@@ -47,7 +47,7 @@ lein cljsbuild auto
 
 ## usage
 
-```clojure
+```
 lein new cccp [app name]
 ```
 
