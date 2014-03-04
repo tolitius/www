@@ -25,4 +25,5 @@
   :ring {:handler {{name}}.handler/app}
 
   :profiles
-    {:dev {:dependencies [[ring-mock "0.1.5"]]}})
+    {:dev {:dependencies [[ring-mock "0.1.5"]
+                          [javax.servlet/servlet-api "2.5"]]}})

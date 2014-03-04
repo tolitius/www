@@ -17,6 +17,8 @@
              ["src/{{sanitized}}/cljs/{{name}}.cljs" (render "cccp.cljs" data)] ;; client wisdom placeholder
              ["src/{{sanitized}}/cljs/tools.cljs" (render "tools.cljs" data)]   ;; local storage & console logging
 
+             ["test/{{sanitized}}/test.clj" (render "test.clj" data)]           ;; server test entry point
+
              ["resources/public/css/{{name}}.css" (render "cccp.css" data)]
              ["project.clj" (render "project.clj" data)]
              [".gitignore" (render "gitignore" data)])))
