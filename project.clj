@@ -1,4 +1,4 @@
-(defproject cccp/lein-template "0.1.0"
+(defproject cccp/lein-template "0.1.1"
   :description "Creates a new Clojure + ClojureScript + Compojure + Ring project template"
   :url "https://github.com/tolitius/cccp"
   :license {:name "Eclipse Public License"
