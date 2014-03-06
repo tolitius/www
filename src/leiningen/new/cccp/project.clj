@@ -14,6 +14,8 @@
 
   :hooks [leiningen.cljsbuild]
 
+  :repl-options {:init-ns {{name}}}
+
   :cljsbuild {
     :builds [{:source-paths ["src/{{name}}/cljs"]
               :compiler {:output-to "resources/public/js/{{name}}.js"
