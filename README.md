@@ -113,6 +113,9 @@ cljs.user=> (def $container (.getElementById js/document "container"))
 
 cljs.user=> (set! (.-innerHTML $container) "I am ready <em>and</em> I am being created!")
 ```
+
+no need to refresh the browser, since it works directly on the DOM:
+
 <p align="center">
   <img src="https://github.com/tolitius/www/raw/master/docs/via-brepl.png" alt="Changing DOM with CLJS REPL"/>
 </p>
