@@ -30,4 +30,14 @@
 
   :profiles
     {:dev {:dependencies [[ring-mock "0.1.5"]
-                          [javax.servlet/servlet-api "2.5"]]}})
+                          [javax.servlet/servlet-api "2.5"]]
+
+           :injections [(require '[{{name}}.brepl :refer [with-repl]]
+                                 '[cemerick.austin.repls])
+                        (defn browser-repl-env []
+                          (reset! cemerick.austin.repls/browser-repl-env
+                                   (cemerick.austin/repl-env)))
+                        (defn browser-repl []
+                          (cemerick.austin.repls/cljs-repl
+                            (browser-repl-env)))]}
+     })
