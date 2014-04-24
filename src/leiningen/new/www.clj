@@ -26,6 +26,6 @@
                 ["project.clj" (render "brepl/project.clj" data)]]]
 
      (apply ->files data
-       (if (= opts ":with-brepl")
-         (concat base brepl) 
+       (if (= opts "with-brepl")
+         (concat base brepl)
          base)))))

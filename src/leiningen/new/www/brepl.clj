@@ -10,7 +10,7 @@
     (run-jetty #'app-routes {:port 3000 :join? false}))
   server)
 
-(defn with-repl []
+(defn connect-to-browser []
   (run)
   (let [repl-env (reset! browser-repl-env
                          (a/repl-env))]

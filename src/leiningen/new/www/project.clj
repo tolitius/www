@@ -6,7 +6,7 @@
 
   :dependencies [[compojure "1.1.6"]
                  [org.clojure/clojurescript "0.0-2202"]
-                 [org.clojure/clojure "1.6.0"]
+                 [org.clojure/clojure "1.5.1"]
                  [hiccup "1.0.5"]]
 
   :plugins [[lein-ring "0.8.10"]
