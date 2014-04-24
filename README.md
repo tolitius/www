@@ -4,14 +4,12 @@ Creates a new Clojure + ClojureScript (+ nREPL) + Compojure + Ring project templ
 
 ## what it does
 
-There are two different templates **www** can create:
-
 * a simple barebone template 
 * a template with a browser connected ClojureScript nREPL (via [austin](https://github.com/cemerick/austin))
+* enables a LightTable (live) style coding
 
-Let's look at both.
 
-###Simple www Template
+##Simple www Template
 
 ```
 lein new www [app name]
@@ -55,7 +53,7 @@ app is ready to roll.
 
 a more interesting option is being able to feel/work with DOM from within a CLJS REPL, let's see how it's done.
 
-###Browser Connected ClojureScript REPL www Template
+##Browser Connected ClojureScript REPL www Template
 
 this template is created the same way as a simple one above plus a handy `with-brepl` option:
 
@@ -106,7 +104,7 @@ cljs.user=>
 
 open a browser at [http://localhost:3000/](http://localhost:3000/), it will make it connect to this REPL
 
-####and now... show time! 
+###and now... show time! 
 
 let's change DOM from within our very own CLJS REPL:
 
@@ -123,11 +121,11 @@ no need to refresh the browser, since it works directly on the DOM:
   <img src="https://github.com/tolitius/www/raw/master/docs/via-brepl.png" alt="Changing DOM with CLJS REPL"/>
 </p>
 
-### LightTable Style (live) Coding
+## LightTable Style (live) Coding
 
 Since connecting a ClojureScript REPL to a browser relies on [austin](https://github.com/cemerick/austin) which relies on [piggieback](https://github.com/cemerick/piggieback), projects created with **www** template can have their "nREPL ready" ClojureScript editors / IDEs also connected to a browser.
 
-####VIM as an example
+###VIM as an example
 
 Same should work in emacs, eclipse, intellij, since the main ingredient here is nREPL and they all support it, but we'll start from VIM as an example.
 
@@ -169,7 +167,7 @@ in VIM command mode run:
 :Piggieback (browser-repl-env)
 ```
 
-* open the browser `http://localhost:3000/`:
+* open a browser at [http://localhost:3000/](http://localhost:3000/):
 
 <p align="center">
   <img src="https://github.com/tolitius/www/raw/master/docs/vim-piggieback.png" alt="piggieback from vim-fireplace"/>
