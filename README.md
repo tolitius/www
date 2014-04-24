@@ -142,7 +142,7 @@ lein new www [app name] with-brepl
 cd [app name]
 ```
 
-* start repl and connect to a browser
+* start repl and connect it to a browser
 
 ```clojure
 lein repl
@@ -157,13 +157,13 @@ nil
 cljs.user=>
 ```
 
-* open a ClojureScript file of interest and connect VIM to a "browser repl environemnt"
+* open a ClojureScript file of interest, and connect VIM to a "browser repl environemnt"
 
 ```bash
 $ vi src/[app name]/cljs/[app name].cljs
 ```
 
-in VIM command mode:
+in VIM command mode run:
 
 ```vim
 :Piggieback (browser-repl-env)
