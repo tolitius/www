@@ -95,8 +95,8 @@ lein repl
 once inside the Clojure REPL start the app with CLJS REPL (`foo` here is your `[app name]`):
 
 ```clojure
-xyz=> (require '[foo.brepl :refer [with-repl]])
-xyz=> (with-repl)
+foo=> (require '[foo.brepl :refer [with-repl]])
+foo=> (with-repl)
 2014-03-05 22:13:39.954:INFO:oejs.Server:jetty-7.6.8.v20121106
 2014-03-05 22:13:39.979:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:3000
 ```
