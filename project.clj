@@ -1,6 +1,6 @@
-(defproject cccp/lein-template "0.1.2"
-  :description "Creates a new Clojure + ClojureScript + Compojure + Ring project template"
-  :url "https://github.com/tolitius/cccp"
+(defproject www/lein-template "0.1.3"
+  :description "Creates a new Clojure + ClojureScript (+ nREPL) + Compojure + Ring project template"
+  :url "https://github.com/tolitius/www"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true)

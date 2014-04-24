@@ -5,12 +5,12 @@
   :source-paths ["src" "src/{{name}}"]
 
   :dependencies [[compojure "1.1.6"]
-                 [org.clojure/clojurescript "0.0-2030"]
-                 [org.clojure/clojure "1.5.1"]
+                 [org.clojure/clojurescript "0.0-2202"]
+                 [org.clojure/clojure "1.6.0"]
                  [hiccup "1.0.5"]]
 
   :plugins [[lein-ring "0.8.10"]
-            [lein-cljsbuild "1.0.2"]]
+            [lein-cljsbuild "1.0.3"]]
 
   :hooks [leiningen.cljsbuild]
 

@@ -1,22 +1,20 @@
-# cccp
+# www
 
-Creates a new Clojure + ClojureScript + Compojure + Ring project template
-
-The reason it is not CCC<b>R</b>, is simply because [CCCP](http://en.wikipedia.org/wiki/Soviet_Union) is a Russian acronym fo USSR 
+Creates a new Clojure + ClojureScript (+ nREPL) + Compojure + Ring project template
 
 ## what it does
 
-There are two different templates **cccp** can create:
+There are two different templates **www** can create:
 
 * a simple barebone template 
-* a template with a browser connected ClojureScript REPL (via [austin](https://github.com/cemerick/austin))
+* a template with a browser connected ClojureScript nREPL (via [austin](https://github.com/cemerick/austin))
 
 Let's look at both.
 
-###Simple cccp Template
+###Simple www Template
 
 ```
-lein new cccp [app name]
+lein new www [app name]
 ```
 
 will create a project template in a form of:
@@ -50,19 +48,19 @@ lein ring server
 which will compile (with ClojureScript) and start the app:
 
 <p align="center">
-  <img src="https://github.com/tolitius/cccp/raw/master/docs/cccp-run.png" alt="running CCCP"/>
+  <img src="https://github.com/tolitius/www/raw/master/docs/www-run.png" alt="running www"/>
 </p>
 
 app is ready to roll.
 
 a more interesting option is being able to feel/work with DOM from within a CLJS REPL, let's see how it's done.
 
-###Browser Connected ClojureScript REPL cccp Template
+###Browser Connected ClojureScript REPL www Template
 
 this template is created the same way as a simple one above plus a handy `:with-brepl` option:
 
 ```
-lein new cccp [app name] :with-brepl
+lein new www [app name] :with-brepl
 ```
 
 which creates a project template in a form of:
@@ -116,7 +114,7 @@ cljs.user=> (def $container (.getElementById js/document "container"))
 cljs.user=> (set! (.-innerHTML $container) "I am ready <em>and</em> I am being created!")
 ```
 <p align="center">
-  <img src="https://github.com/tolitius/cccp/raw/master/docs/via-brepl.png" alt="Changing DOM with CLJS REPL"/>
+  <img src="https://github.com/tolitius/www/raw/master/docs/via-brepl.png" alt="Changing DOM with CLJS REPL"/>
 </p>
 
 ## license
