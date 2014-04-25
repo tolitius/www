@@ -4,7 +4,7 @@
 (def render (renderer "www"))
 
 (defn www
-  "Create a new Clojure + ClojureScript (+ nREPL) + Compojure + Ring project"
+  "Creates web project templates of different flavors: Om, ClojureScript (+ nREPL), Compojure, Hiccup, Ring, etc."
   ([name] 
    (www name :noop))
   ([name opts]
@@ -23,9 +23,13 @@
                [".gitignore" (render "gitignore" data)]]
          brepl [["test/{{sanitized}}/brepl.clj" (render "brepl.clj" data)]
                 ["src/{{sanitized}}/layout.clj" (render "brepl/layout.clj" data)]
-                ["project.clj" (render "brepl/project.clj" data)]]]
+                ["project.clj" (render "brepl/project.clj" data)]]
+         om    [["src/{{sanitized}}/cljs/{{name}}.cljs" (render "om/www.cljs" data)]  ;; om "hello world"
+                ["src/{{sanitized}}/layout.clj" (render "om/layout.clj" data)]
+                ["project.clj" (render "om/project.clj" data)]]]
 
      (apply ->files data
-       (if (= opts "with-brepl")
-         (concat base brepl)
+       (case opts
+         "with-brepl" (concat base brepl)
+         "with-om" (concat base brepl om)
          base)))))
