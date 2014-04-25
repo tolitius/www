@@ -194,12 +194,14 @@ Manipulate DOM? Of course:
 $ lein new www [app name] with-om
 ```
 
-which would create an Om ready app with a Hello World filler from [Om Tutorial](https://github.com/swannodette/om/wiki/Basic-Tutorial) two differences are:
+which would create an Om ready app with a Hello World filler from [Om tutorial](https://github.com/swannodette/om/wiki/Basic-Tutorial). Two major differences are:
 
-* Om tutorial is based on Light Table, this template is based on "raw nREPL" (via [austin](https://github.com/cemerick/austin)), so can be used by any editor that supports that (e.g. see [VIM example](https://github.com/tolitius/www#vim-as-an-example) above)
+* Om tutorial is based on Light Table, this template is based on "raw" nREPL (via [austin](https://github.com/cemerick/austin)), so can be used by any editor that supports it (e.g. see [VIM example](https://github.com/tolitius/www#vim-as-an-example) above)
 * Om tutorial is enlive based, this template is hiccup based
 
 ###Om in Action
+
+This example is in VIM, however, with a difference of nREPL integration (the `Piggieback` portion from below) and an `eval` (`cpp` below) keyboard shortcut, it will work in most common editors: emacs, eclipse, intellij, etc..
 
 * create a new project
 
