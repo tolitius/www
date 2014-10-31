@@ -6,16 +6,16 @@
 
   :source-paths ["src" "src/{{name}}"]
 
-  :dependencies [[compojure "1.1.6"]
-                 [ring "1.2.1"]
-                 [org.clojure/clojurescript "0.0-2202"]
-                 [org.clojure/clojure "1.5.1"]
-                 [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
-                 [om "0.6.1"]
+  :dependencies [[compojure "1.2.1"]
+                 [ring "1.3.1"]
+                 [org.clojure/clojurescript "0.0-2371"]
+                 [org.clojure/clojure "1.6.0"]
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
+                 [om "0.8.0-alpha1"]
                  [hiccup "1.0.5"]]
 
-  :plugins [[lein-ring "0.8.10"]
-            [com.cemerick/austin "0.1.4"]
+  :plugins [[lein-ring "0.8.13"]
+            [com.cemerick/austin "0.2.0-SNAPSHOT"]
             [lein-cljsbuild "1.0.3"]]
 
   :hooks [leiningen.cljsbuild]

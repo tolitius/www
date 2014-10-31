@@ -7,8 +7,11 @@
 
 (def app-state (atom {:text "Hello world!"}))
 
-(om/root
-  (fn [app owner]
-    (dom/h1 nil (:text app)))
-  app-state
+(defn widget [data owner]
+  (reify
+    om/IRender
+    (render [this]
+      (dom/h1 nil (:text data)))))
+
+(om/root widget app-state
   {:target (. js/document (getElementById "app"))})

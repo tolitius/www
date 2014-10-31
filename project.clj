@@ -1,4 +1,4 @@
-(defproject www/lein-template "0.1.6"
+(defproject www/lein-template "0.1.7"
   :description "Creates web project templates of different flavors: Om, ClojureScript (+ nREPL), Compojure, Hiccup, Ring, etc."
   :url "https://github.com/tolitius/www"
   :license {:name "Eclipse Public License"
