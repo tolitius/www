@@ -53,7 +53,7 @@ app is ready to roll.
 
 a more interesting option is being able to feel/work with DOM from within a CLJS REPL, let's see how it's done.
 
-##Browser Connected ClojureScript REPL www Template
+##Browser Connected ClojureScript REPL
 
 this template is created the same way as a simple one above plus a handy `with-brepl` option:
 
